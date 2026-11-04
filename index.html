@@ -12,12 +12,24 @@
             background-color: #808080;
         }
 
-        .login-button{
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            padding: 8px 18px;
+        .site-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
             background-color: #27292e;
+            border-bottom: 3px solid #336c85;
+        }
+
+        .site-name{
+            margin: 0;
+            color: white;
+            font-size: 26px;
+        }
+
+        .login-button{
+            padding: 8px 18px;
+            background-color: #336c85;
             color: white;
             text-decoration: none;
             border-radius: 6px;
@@ -25,7 +37,7 @@
         }
         
         .login-button:hover{
-            background-color: #336c85;
+            background-color: #1d1f23;
         }
 
         .contact-box{
@@ -68,7 +80,12 @@
     </style> 
 </head>
 <body>
-    <a href="login.html" class="login-button">Login</a>
+    <header class="site-header">
+        <h1 class="site-name">Open Door</h1>
+        <a href="login.html" class="login-button">Login</a>
+    </header>
+
+    <!--<a href="login.html" class="login-button">Login</a> -->
 
     <h1>Open Door</h1>
     <p>Your page content goes here.</p>

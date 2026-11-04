@@ -16,12 +16,27 @@
         background-color: #808080;
     }
 
+    .site-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 20px;
+        background-color: #27292e;
+        border-bottom: 3px solid #336c85;
+    }
+
+    .site-name{
+    margin: 0;
+    color: white;
+    font-size: 26px;
+    }
+
     .home-button{
         position: absolute;
         top: 20px;
         right: 20px;
         padding: 8px 18px;
-        background-color: #27292e;
+        background-color: #336c85;
         color: white;
         text-decoration: none;
         border-radius: 6px;
@@ -29,7 +44,7 @@
     }
 
     .home-button:hover{
-        background-color: #336c85;
+        background-color: #1d1f23;
     }
 
     .login-box{
@@ -77,6 +92,11 @@
 </head>
 
 <body>
+
+    <header class="site-header">
+        <h1 class="site-name">Open Door</h1>
+    </header>
+
     <a href="index.html" class="home-button">Home</a>
     <div class="login-box">
 <img src="images/open_door_logo_transparent.png" alt="Open Door logo" width="100">  <h1>Login Page</h1>
