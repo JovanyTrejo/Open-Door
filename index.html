@@ -1,92 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Open Door</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Door</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #808080;
+        }
 
-  <!-- tab icon -->
-  <link rel="icon" href="images/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        .login-button{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 8px 18px;
+            background-color: #27292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+        
+        .login-button:hover{
+            background-color: #336c85;
+        }
 
-  <style>
-    body{
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background-color: #808080;
-    }
+        .contact-box{
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            width: 240px;
+            padding: 14px 16px;
+            background-color: #27292e;
+            color: white;
+            border: 2px solid #336c85;
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
 
-    .home-button{
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        padding: 8px 18px;
-        background-color: #27292e;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: bold;
-    }
+        .contact-box h3{
+            margin: 0 0 8px 0;
+            font-size: 16px;
+        }
 
-    .home-button:hover{
-        background-color: #336c85;
-    }
+        .contact-box a{
+            color: #9fd3e8;
+        }
 
-    .login-box{
-        text-align: center;
-        margin-top: 60px;
-    }
+        @media (max-width: 700px){
+            .contact-box{
+                position: static;
+                width: 260px;
+                max-width: calc(100% - 40px);
+                margin: 70px 20px 20px auto;
+                padding: 10px 12px;
+                font-size: 13px;
+            }
 
-    .login-box img{
-        display: block;
-        margin: 0 auto;
-    }
-
-    .login-form{
-        display: flex;
-        flex-direction: column;
-        width: 280px;
-        margin: 0 auto;
-        text-align: left;
-    }
-
-    .login-form label{
-        margin-top: 12px;
-        margin-bottom: 4px;
-        font-weight: bold;
-    }
-
-    .login-form input{
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 6px;
-        background-color: #27292e;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    .login-form button:hover{
-        background-color: #336c85;
-    }
-    </style>
+            .contact-box h3{
+                font-size: 14px;
+            }
+        }
+    </style> 
 </head>
-
 <body>
-    <a ref="home.html" class="home-button">Home</a>
-    <div class="login-box">
-<img src="images/open_door_logo_transparent.png" alt="Open Door logo" width="100">  <h1>Login Page</h1>
-<form class="login-form">
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder= "you@example.com" required>
+    <a href="login.html" class="login-button">Login</a>
 
-    <label for ="password">Password</label>
-    <input type="password" id="password" name="password" placeholder= "Enter your password" required>
-    <button type="submit">Login</button>
-</form>
-</div>
+    <h1>Open Door</h1>
+    <p>Your page content goes here.</p>
+
+    <div class="contact-box">
+    <h3>Contact Us</h3>
+        <p><strong>Phone:</strong> <a href="tel:0000000000">(000) 000-0000</a></p>
+        <p><strong>Email:</strong> <a href="mailto:example@csusb.edu">example@csusb.edu</a></p>
+        <p><strong>Location:</strong> [Building and room number]</p>
+        <p><strong>Hours:</strong> Mon–Fri, 8:00 AM – 5:00 PM</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
